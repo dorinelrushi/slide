@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="swiper.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="background-image:url('https://dessign.net/showboxtheme/wp-content/uploads/2016/04/pexels-photo-26180-1.jpg')"></div>
+          <div class="swiper-slide" style="background-image:url('https://images.unsplash.com/photo-1554080353-a576cf803bda?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80')"></div>
+          <div class="swiper-slide" style="background-image:url('https://pbs.twimg.com/profile_images/1037130827602255874/sa2ioHkk_400x400.jpg')"></div>
+          <div class="swiper-slide" style="background-image:url('https://live.staticflickr.com/4645/39469518701_757f0a6b75_b.jpg')"></div>
+          <div class="swiper-slide" style="background-image:url('https://miro.medium.com/max/919/1*WIO3plVQMsrMThKVT07krQ.png')"></div>
+          <div class="swiper-slide" style="background-image:url('https://d3j4p29o9p0awl.cloudfront.net/imageOfTheDay/brandon-woelfel-1576530095.jpg')"></div>
+      
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+
+    <script src='./swiper.min.js'></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+          effect: 'coverflow',
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: 'auto',
+          coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+          },
+          pagination: {
+            el: '.swiper-pagination',
+          },
+        });
+      </script>
+</body>
+</html>
